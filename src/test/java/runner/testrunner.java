@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features ="src/test/java/features"
+        features ="src/test/java/features.SmokeTest"
         ,glue= "seleniumgluecode",
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html", "json:target/report.json"})
 
