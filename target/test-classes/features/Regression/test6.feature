@@ -1,5 +1,5 @@
-@Regression
-Feature: Regression Test1
+@Regression @Test5
+Feature: Regression Test5
   Verify if user is able to Login in to the site
 
   Scenario: Login as a authenticated user
