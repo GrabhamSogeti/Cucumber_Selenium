@@ -47,7 +47,7 @@
                     <artifactId>maven-failsafe-plugin</artifactId>
                     <configuration>
                         <parallel>none</parallel>
-                        <threadCount>1</threadCount>
+                        <threadCount>3</threadCount>
                         <disableXmlReport>true</disableXmlReport>
                     </configuration>
                     <executions>
