@@ -6,13 +6,13 @@
         "line": 5,
         "name": "Login as a authenticated user",
         "description": "",
-        "id": "login-feature;login-as-a-authenticated-user",
+        "id": "smoketest;login-as-a-authenticated-user",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 11289705300,
+              "duration": 11456211400,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1803477100,
+              "duration": 1943628300,
               "status": "passed"
             },
             "line": 7,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 2451616600,
+              "duration": 2320809600,
               "status": "passed"
             },
             "line": 8,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 3834119500,
+              "duration": 4030085400,
               "status": "passed"
             },
             "line": 9,
@@ -61,9 +61,9 @@
         ]
       }
     ],
-    "name": "Login Feature",
+    "name": "SmokeTest",
     "description": "Verify if user is able to Login in to the site",
-    "id": "login-feature",
+    "id": "smoketest",
     "keyword": "Feature",
     "uri": "test.feature",
     "tags": [
