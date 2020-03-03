@@ -21,6 +21,7 @@ public class test {
         System.out.println(getURL);
         String verifyURL = "http://automationpractice.com/index.php";
         System.out.println(verifyURL);
+        System.out.println("test");
         
         Assert.assertEquals(getURL, verifyURL);
     }
