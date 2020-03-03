@@ -1,5 +1,5 @@
-@Test
-Feature: SmokeTest
+@Regression
+Feature: Regression Test2
   Verify if user is able to Login in to the site
 
   Scenario: Login as a authenticated user

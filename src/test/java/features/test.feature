@@ -1,5 +1,5 @@
 @Test
-Feature: Login Feature
+Feature: SmokeTest
   Verify if user is able to Login in to the site
 
   Scenario: Login as a authenticated user
