@@ -11,6 +11,34 @@
   <name>Cucumber_Selenium</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+  
+  <profiles>
+    <profile>
+        <id>s</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <configuration>
+                        <parallel>none</parallel>
+                        <threadCount>1</threadCount>
+                        <disableXmlReport>true</disableXmlReport>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>testrunner</id>
+                            <phase>ui-test</phase>
+                            <goals>
+                                <goal>ui-test</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+</profiles>
 
 <dependencies>
 <dependency>
