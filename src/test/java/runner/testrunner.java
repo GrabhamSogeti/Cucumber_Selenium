@@ -13,9 +13,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         features ="src/test/java/features"
         ,glue= "seleniumgluecode",
-        plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}, 
-        monochrome = true
-                )
+        plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html", "json:target/report.json"})
 
 public class testrunner {
     @AfterClass
