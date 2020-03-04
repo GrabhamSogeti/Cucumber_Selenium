@@ -3,6 +3,7 @@ package seleniumgluecode;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,8 +14,8 @@ public class test {
     public static WebDriver driver;
     @Given("^user is  on homepage$")
     public void user_is_on_homepage() throws Throwable {     
-    	System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-        driver = new FirefoxDriver();
+    	System.setProperty("webdriver.gecko.driver", "chromedriver.exe");
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://automationpractice.com/index.php");
         String getURL = driver.getCurrentUrl();
