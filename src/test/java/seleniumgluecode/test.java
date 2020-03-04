@@ -41,7 +41,7 @@ public class test {
     
     @Then("^success message is displayed$")
     public void success_message_is_displayed() throws Throwable {
-    	wait(2000);
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     	String exp_message = "Welcome to your account. Here you can manage all of your personal information and orders.";
     	String actual = driver.findElement(By.cssSelector(".info-account")).getText();
         Assert.assertEquals(exp_message, actual);
