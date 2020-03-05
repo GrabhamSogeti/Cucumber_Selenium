@@ -1,4 +1,4 @@
-@Regression
+@Regression @Test5
 Feature: Regression Test2
   Verify if user is able to Login in to the site
 
