@@ -4,7 +4,7 @@ pipeline {
 stage('testing pipeline'){
           steps{
       echo 'test1'
-      			sh 'mvn --version'
+      			# nohup compile -Dtest=testrunner test &
                 }
         }
 }
