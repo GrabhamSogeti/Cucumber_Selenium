@@ -1,21 +1,11 @@
 pipeline {
-   agent any
-
-   stages {
-      stage('Smoketest') {
-        steps {
-        	-Dtest=testrunner test
+    agent any
+    stages {
+stage('testing pipeline'){
+          steps{
+      echo 'test1'
+                sh 'src/test/java/runner/regression.java'
+                }
         }
-   }
-   stage('In Sprint') {
-     steps {
-        	-Dtest=insprint test
-     }
-   }
-   stage('Regression') {
-     steps {
-            -Dtest=regression test
-     }
-   }
-  }
+}
 }
