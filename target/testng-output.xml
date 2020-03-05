@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="0" passed="2" skipped="0" total="2">
+    <suite duration-ms="34863" name="cucumber.runtime.formatter.TestNGFormatter">
+        <test duration-ms="34863" name="cucumber.runtime.formatter.TestNGFormatter">
+            <class name="Regression Test2">
+                <test-method duration-ms="19312" finished-at="2020-03-05T14:49:20Z" name="Login as a authenticated user" started-at="2020-03-05T14:49:00Z" status="PASS"/>
+            </class>
+            <class name="Regression Test4">
+                <test-method duration-ms="15551" finished-at="2020-03-05T14:49:35Z" name="Login as a authenticated user" started-at="2020-03-05T14:49:20Z" status="PASS"/>
+            </class>
+        </test>
+    </suite>
+</testng-results>

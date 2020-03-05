@@ -1,0 +1,18 @@
+@Regression @Test5
+Feature: Regression Test2
+  Verify if user is able to Login in to the site
+
+  Scenario: Login as a authenticated user # test3.feature:5
+    Given user is  on homepage            # test.user_is_on_homepage()
+    When user navigates to Login Page     # test.user_navigates_to_Login_Page()
+    And user enters username and Password # test.user_enters_username_and_Password()
+    Then success message is displayed     # test.success_message_is_displayed()
+@Regression @Test5
+Feature: Regression Test4
+  Verify if user is able to Login in to the site
+
+  Scenario: Login as a authenticated user # test5.feature:5
+    Given user is  on homepage            # test.user_is_on_homepage()
+    When user navigates to Login Page     # test.user_navigates_to_Login_Page()
+    And user enters username and Password # test.user_enters_username_and_Password()
+    Then success message is displayed     # test.success_message_is_displayed()
