@@ -4,7 +4,7 @@ pipeline {
 stage('testrunner'){
           steps{
       echo 'test1'
-                sh 'src/test/java/runner/regression.java'
+                'src/test/java/runner/regression.java'
                 }
         }
 }
