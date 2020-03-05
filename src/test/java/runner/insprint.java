@@ -10,7 +10,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "\"src/test/java/features/Regression\"" }, glue = "seleniumgluecode", plugin = {
+@CucumberOptions(features = { "src/test/java/features/Regression" }, glue = "seleniumgluecode", plugin = {
         "pretty:target/prettyReport.txt", "html:target/cucumber", "json:target/report.json", "rerun:target/rerun.txt",
         "junit:target/junit-report.xml", "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html", "testng:target/testng-output.xml" }, monochrome = true, tags = {"@Test5"})
 
