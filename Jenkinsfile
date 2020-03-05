@@ -1,9 +1,12 @@
 pipeline {
     agent any
     stages {
-stage('testrunner'){
+stage('testing pipeline'){
           steps{
-                sh 'compile -Dtest=testrunner test
+      echo 'test1'
+      			sh 'mvn --version'
+                sh 'mvn compile'
+            	sh '-Dtest=testrunner test'
                 }
         }
 }
