@@ -1,4 +1,4 @@
-@Regression
+@Regression @Sprint1
 Feature: Regression Test1
   Verify if user is able to Login in to the site
 
