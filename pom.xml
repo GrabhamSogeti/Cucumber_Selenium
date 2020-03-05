@@ -63,6 +63,31 @@
             </plugins>
         </build>
     </profile>
+     <profile>
+        <id>insprint</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <configuration>
+                        <parallel>none</parallel>
+                        <threadCount>3</threadCount>
+                        <disableXmlReport>true</disableXmlReport>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>insprint</id>
+                            <phase>ui-test</phase>
+                            <goals>
+                                <goal>ui-test</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
 </profiles>
 
 <dependencies>
