@@ -4,8 +4,8 @@ pipeline {
 stage('testing pipeline'){
           steps{
       echo 'test1'
-      			nohup compile -Dtest=testrunner &
-                }
+      			nohup compile -Dtest=testrunner
         }
+}
 }
 }
