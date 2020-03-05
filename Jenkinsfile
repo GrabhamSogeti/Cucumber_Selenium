@@ -3,8 +3,7 @@ pipeline {
     stages {
 stage('testrunner'){
           steps{
-      echo 'test1'
-                'src/test/java/runner/regression.java'
+                sh 'compile -Dtest=testrunner test
                 }
         }
 }
